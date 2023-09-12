@@ -610,7 +610,7 @@ footer .desarrollo .svg_desarrollo {
 }
 @media (max-width: 1024px) {
   .header {
-    padding: 2%;
+    padding: 5%;
   }
   #inicio_presentacion {
     margin: 7% 5%;
@@ -794,7 +794,7 @@ footer .desarrollo .svg_desarrollo {
 }
 @media (max-width: 767px) {
   .header {
-    padding: 2%;
+    padding: 5%;
   }
   #inicio_presentacion {
     margin: 7% 4%;
