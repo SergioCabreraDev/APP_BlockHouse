@@ -403,7 +403,7 @@ footer .desarrollo .svg_desarrollo {
 
 @media screen and (min-width: 1024px) and (max-width: 1500px) {
   .header {
-    padding: 0%;
+    padding: 5%;
   }
   #inicio_presentacion {
     margin: 7% 15%;
@@ -791,7 +791,7 @@ footer .desarrollo .svg_desarrollo {
 }
 @media (max-width: 767px) {
   .header {
-    padding: 0%;
+    padding: 5%;
   }
   #inicio_presentacion {
     margin: 7% 4%;
