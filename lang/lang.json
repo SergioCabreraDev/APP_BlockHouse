@@ -28,7 +28,8 @@
       "menuproyectos": "Proyectos",
       "menuskills": "Habilidades",
       "menutitulos": "Titulos",
-      "menuexp": "Experiencia"
+      "menuexp": "Experiencia",
+      "ptitulaciones": "En estos momentos estoy realizando cursos de manera autodidacta..."
       
     },
     "en": {
@@ -60,8 +61,8 @@
       "menuproyectos": "Projects",
       "menuskills": "Skills",
       "menutitulos": "Degrees",
-      "menuexp": "Experience"
-    
+      "menuexp": "Experience",
+      "ptitulaciones": "At the moment, I engage in self-paced learning courses..."
     
     }
   }
