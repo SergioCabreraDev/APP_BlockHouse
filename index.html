@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,12 +20,23 @@
 
       <nav class="nav">
           <ul class="ul">
-              <li class="li"><a href="#proyectos" class="a">Proyectos</a></li>
-              <li class="li"><a href="#habilidades" class="a">Habilidades</a></li>
-              <li class="li"><a href="#titulos" class="a">Titulos</a></li>
-              <li class="li"><a href="#experiencia" class="a">Experiencia</a></li>
+              <li class="li"><a data-lang="menuproyectos" href="#proyectos" class="a">Proyectos</a></li>
+              <li class="li"><a data-lang="menuskills" href="#habilidades" class="a">Habilidades</a></li>
+              <li class="li"><a data-lang="menutitulos" href="#titulos" class="a">Titulos</a></li>
+              <li class="li"><a data-lang="menuexp" href="#experiencia" class="a">Experiencia</a></li> 
+              <div class="idioma">
+           
+                <a class="translate" id="en"><img src="/assets/svg/Flag_of_the_United_States.svg" width="35px"></a>
+                <a class="translate" id="es"><img src="/assets/svg/Flag_of_Spain.svg" width="35px"></a>
+                
+               
+            </div>
+             
+             
           </ul>
+
       </nav>
+      
   </header>
 
   <div id="inicio_presentacion">
@@ -37,12 +48,12 @@
       <h1>
         Sergio Cabrera
         <br />
-        <strong>Desarrollador Junior</strong>
+        <strong data-lang="desarrollador">Desarrollador Junior</strong>
       </h1>
 
       <section class="borde-decoration_about"></section>
 
-      <p>
+      <p  data-lang="descripcion">
         Entusiasta programador junior con un enfoque versátil en el desarrollo web y el análisis de datos. Con una sólida base en tecnologías tanto de front-end como de back-end, soy una persona a la que le gustan los retos.
       </p>
 
@@ -63,20 +74,20 @@
             />
           </svg>
         </a>
-        <a href="assets/Curriculum Actualizado.pdf" download="Curriculum Actualizado.pdf" class="boton-descargar">
+        <a data-lang="descargarcv" href="assets/Curriculum Actualizado.pdf" download="Curriculum Actualizado.pdf" class="boton-descargar">
           Descargar CV
         </a>
       </section>
     </div>
   </div>
 
-  <h2 id="proyectos">PROYECTOS</h2>
+  <h2 id="proyectos" data-lang="proyectos">PROYECTOS</h2>
   <div id="contenedor_proyectos">
     <section class="proyecto">
       <img src="/assets/img/blockhouseminiatura.webp" class="imagen-proyecto" alt="" />
       <div class="letras">
         <h3>Block House Web Responsive</h3>
-        <p>Web completa con diseño Responsive, sistema de compra con carrito para recoger en el restaurante, reservas, cuentas de usuario con sesiones, registros, etc.</p>
+        <p data-lang="blockhouse">Web completa con diseño Responsive, sistema de compra con carrito para recoger en el restaurante, reservas, cuentas de usuario con sesiones, registros, etc.</p>
       </div>
       <div class="tecnologias">
         <img src="/assets/svg/html5.svg" alt="" />
@@ -94,7 +105,7 @@
             />
           </svg>
         </a>
-        <a href="http://sergiocabreradev-bh.site/" target="_blank" class="boton-descargar">
+        <a data-lang="visitarweb" href="http://sergiocabreradev-bh.site/" target="_blank" class="boton-descargar">
           Visitar Web
         </a>
       </section>
@@ -104,7 +115,7 @@
       <img src="/assets/img/opinionminingminiatura.webp" alt="" class="imagen-proyecto" />
       <div class="letras">
         <h3>Opinion Mining PS5</h3>
-        <p>Este proyecto consiste en hacer scraping en los comentarios de Amazon de la PS5 y recolectar cientos de comentarios, para hacer un análisis de sentimientos.</p>
+        <p data-lang="opinionmining">Este proyecto consiste en hacer scraping en los comentarios de Amazon de la PS5 y recolectar cientos de comentarios, para hacer un análisis de sentimientos.</p>
       </div>
       <div class="tecnologias">
         <img src="/assets/svg/python.svg" alt="" />
@@ -122,27 +133,27 @@
       </section>
     </section>
   </div>
-  <h2 id="habilidades">HABILIDADES</h2>
+  <h2 id="habilidades" data-lang="habilidades">HABILIDADES</h2>
   <div id="contenedor_habilidades">
     <section class="lenguaje">
       <img src="/assets/svg/html5.svg" alt="" />
       <div class="letras_habilidades">
         <p><b>HTML</b></p>
-        <p>Marcado Web</p>
+        <p data-lang="html">Marcado Web</p>
       </div>
     </section>
     <section class="lenguaje">
       <img src="/assets/svg/css.svg" alt="" />
       <div class="letras_habilidades">
         <p><b>CSS</b></p>
-        <p>Estilos Web</p>
+        <p data-lang="css">Estilos Web</p>
       </div>
     </section>
     <section class="lenguaje">
       <img src="/assets/svg/js.svg" alt="" />
       <div class="letras_habilidades">
         <p><b>JavaScript</b></p>
-        <p>Interactividad web</p>
+        <p data-lang="js">Interactividad web</p>
       </div>
     </section>
     <section class="lenguaje">
@@ -156,87 +167,88 @@
       <img src="/assets/svg/mysql-icon.svg" alt="" />
       <div class="letras_habilidades">
         <p><b>MySQL</b></p>
-        <p>Base de Datos SQL</p>
+        <p data-lang="sql">Base de Datos SQL</p>
       </div>
     </section>
     <section class="lenguaje">
       <img src="/assets/svg/mongodb.svg" alt="" />
       <div class="letras_habilidades">
         <p><b>MongoDB</b></p>
-        <p>Base de datos NoSQL</p>
+        <p data-lang="nosql">Base de datos NoSQL</p>
       </div>
     </section>
     <section class="lenguaje">
       <img src="/assets/svg/python.svg" alt="" />
       <div class="letras_habilidades">
         <p><b>Python</b></p>
-        <p>Lenguaje Back-End</p>
+        <p data-lang="python">Lenguaje Back-End</p>
       </div>
     </section>
     <section class="lenguaje">
       <img src="/assets/svg/sass.svg" alt="" />
       <div class="letras_habilidades">
         <p><b>SASS</b></p>
-        <p>Preprocesador CSS</p>
+        <p data-lang="sass">Preprocesador CSS</p>
       </div>
     </section>
     <section class="lenguaje">
       <img src="/assets/svg/photoshop.svg" alt="" />
       <div class="letras_habilidades">
         <p><b>Photoshop</b></p>
-        <p>Edición de imágenes</p>
+        <p data-lang="ps">Edición de imágenes</p>
       </div>
     </section>
   </div>
 
-  <h2 id="titulaciones">TITULACIONES ACADÉMICAS</h2>
+  <h2 id="titulaciones" data-lang="titulaciones">TITULACIONES ACADÉMICAS</h2>
   <div id="contenedor_titulaciones">
     <section class="lenguaje">
       <div class="letras_habilidades">
-        <p><b>Grado Medio Gestión Administrativa</b></p>
+        <p data-lang="gmadmin"><b>Grado Medio Gestión Administrativa</b></p>
         <p>Jesus Maria | 2018 - 2020</p>
       </div>
       <div>
-        <a href="assets/img/GRADO GESTIONADMINISTRATIVO.jpg" download="GRADO GESTIONADMINISTRATIVO.jpg" class="boton-descargar">
+        <a data-lang="comprobante" href="assets/img/GRADO GESTIONADMINISTRATIVO.jpg" download="GRADO GESTIONADMINISTRATIVO.jpg" class="boton-descargar">
           Comprobante
         </a>
       </div>
     </section>
     <section class="lenguaje">
       <div class="letras_habilidades">
-        <p><b>Grado Superior Desarrollo de Aplicaciones Web</b></p>
+        <p data-lang="gsdaw"><b>Grado Superior Desarrollo de Aplicaciones Web</b></p>
         <p>EDIB | 2020 - 2022</p>
       </div>
       <div>
-        <a href="assets/img/DAW.jpg" download="DAW.jpg" class="boton-descargar">
+        <a data-lang="comprobante" href="assets/img/DAW.jpg" download="DAW.jpg" class="boton-descargar">
           Comprobante
         </a>
       </div>
     </section>
     <section class="lenguaje">
       <div class="letras_habilidades">
-        <p><b>Especialización en Inteligencia Artificial y Big Data</b></p>
+        <p data-lang="bgia"><b>Especialización en Inteligencia Artificial y Big Data</b></p>
         <p>CIFP Pau Casesnoves | 2022 - 2023</p>
       </div>
       <div>
-        <a href="assets/img/ESPECIALIZACION BIGDATA Y IA.jpg" download="ESPECIALIZACION BIGDATA Y IA.jpg" class="boton-descargar">
+        <a data-lang="comprobante" href="assets/img/ESPECIALIZACION BIGDATA Y IA.jpg" download="ESPECIALIZACION BIGDATA Y IA.jpg" class="boton-descargar">
           Comprobante
         </a>
       </div>
     </section>
   </div>
 
-  <h2 id="experiencia">EXPERIENCIA</h2>
+  <h2 id="experiencia" data-lang="experiencia">EXPERIENCIA</h2>
   <div id="contenedor_experiencia">
     <section>
-      <p>Aunque tengo una amplia experiencia programando por mi cuenta y en mis estudios, todavía no he tenido la oportunidad de formar parte de un equipo en una empresa.<br /><br />Solamente he estado de becario en una empresa haciendo prácticas por el grado superior de DAW pero hacía de todo menos programar.</p>
+      <p data-lang="expdesc">Aunque tengo una amplia experiencia programando por mi cuenta y en mis estudios, todavía no he tenido la oportunidad de formar parte de un equipo en una empresa.<br /><br />
+        He desempeñado el papel de becario en una empresa durante mis prácticas correspondientes al grado superior de Desarrollo de Aplicaciones Web (DAW), donde mi labor se centró en una variedad de tareas, aunque desgraciadamente no estuvo relacionada con la programación.</p>
     </section>
   </div>
 
   <footer>
     <div class="ubicacion">
       <img class="svg_footer" src="/assets/svg/map-pin-filled.svg" alt="" />
-      <p>Palma de Mallorca, España.</p>
+      <p data-lang="ubi">Palma de Mallorca, España.</p>
     </div>
 
     <div class="contactos">
@@ -245,10 +257,12 @@
       <a href="mailto:scabrera.main@gmail.com" target="_blank"><img class="svg_footer" src="/assets/svg/mail.svg" alt="" /></a>
     </div>
     <div class="desarrollo">
-      <p>Tecnologías utilizadas</p>
+      <p data-lang="footertech">Tecnologías utilizadas</p>
       <img class="svg_desarrollo" src="/assets/svg/icons8-html.svg" alt="" />
       <img class="svg_desarrollo" src="/assets/svg/icons8-sass.svg" alt="" />
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

@@ -39,6 +39,7 @@ li {
 /* Código */
 .header {
   width: 100%;
+  font-size: 17px;
   background-color: #282828;
   padding: 1em;
   font-family: "Outfit-Regular";
@@ -114,6 +115,15 @@ svg {
   color: #ffffff; /* Cambia el color de texto a tu gusto */
 }
 
+/* Mover el bloque de idioma al final */
+.idioma {
+  padding-top: 0.8%;
+  display: flex;
+  gap: 5%;
+  padding-left: 9%;
+  align-items: center;
+}
+
 /* Estilo de la línea animada */
 .li::after {
   content: "";
@@ -129,6 +139,64 @@ svg {
 /* Efecto hover */
 .li:hover::after {
   width: 100%; /* La línea se expandirá completamente en hover */
+}
+
+.checkbox {
+  display: none;
+}
+
+.switch {
+  width: 52px;
+  height: 22px;
+  background: #E5E5E5;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 16px;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+}
+
+.switch:before {
+  content: " ";
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 50px;
+  height: 20px;
+  background: #FFFFFF;
+  z-index: 1;
+  border-radius: 16px;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+}
+
+.switch:after {
+  content: " ";
+  height: 19px;
+  width: 19px;
+  border-radius: 28px;
+  background: #FFFFFF;
+  position: absolute;
+  z-index: 2;
+  top: 1px;
+  left: 1px;
+  transition-duration: 300ms;
+  box-shadow: 0 2px 5px #999999;
+}
+
+.switchOn, .switchOn:before {
+  background: #4cd964 !important;
+}
+
+.switchOn:after {
+  left: 30px !important;
 }
 
 #inicio_presentacion {
