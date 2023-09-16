@@ -22,14 +22,15 @@
       "gsdaw": "Grado Superior Desarrollo de Aplicaciones Web",
       "bgia": "Especialización en Inteligencia Artificial y Big Data",
       "comprobante": "Comprobante",
-      "expdesc": "Aunque tengo una amplia experiencia programando por mi cuenta y en mis estudios, todavía no he tenido la oportunidad de formar parte de un equipo en una empresa.  He desempeñado el papel de becario en una empresa durante mis prácticas correspondientes al grado superior de Desarrollo de Aplicaciones Web (DAW), donde mi labor se centró en una variedad de tareas, aunque desgraciadamente no estuvo relacionada con la programación.",
       "ubi": "Palma de Mallorca, España.",
       "footertech": "Tecnologías utilizadas",
       "menuproyectos": "Proyectos",
       "menuskills": "Habilidades",
       "menutitulos": "Titulos",
       "menuexp": "Experiencia",
-      "ptitulaciones": "En estos momentos estoy realizando cursos de manera autodidacta..."
+      "ptitulaciones": "En estos momentos estoy realizando cursos de manera autodidacta...",
+      "exptittle": "Desarrollador Front-End como becario.",
+      "expp": "Tecnologies Industrials | 7 meses | HTML, SASS, PHP, MySQL"
       
     },
     "en": {
@@ -55,14 +56,15 @@
       "gsdaw": "Higher Degree in Web Application Development",
       "bgia": "Specialization in Artificial Intelligence and Big Data",
       "comprobante": "Proof",
-      "expdesc": "Although I have extensive experience programming on my own and in my studies, I have not yet had the opportunity to be part of a team in a company. I worked as an intern in a company during my internship for the Higher Degree in Web Application Development (DAW), where my role focused on a variety of tasks, although unfortunately, it was not related to programming.",
       "ubi": "Palma de Mallorca, Spain",
       "footertech": "Technologies Used",
       "menuproyectos": "Projects",
       "menuskills": "Skills",
       "menutitulos": "Degrees",
       "menuexp": "Experience",
-      "ptitulaciones": "At the moment, I engage in self-paced learning courses..."
+      "ptitulaciones": "At the moment, I engage in self-paced learning courses...",
+      "exptittle": "Front-End Developer as an intern.",
+      "expp": "Tecnologies Industrials | 7 Months | HTML, SASS, PHP, MySQL"
     
     }
   }
