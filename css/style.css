@@ -145,6 +145,12 @@ svg {
   width: 27px;
 }
 
+#habilidades1 {
+  margin-bottom: 1.5%;
+  margin-top: 0%;
+  font-size: 25px;
+}
+
 #inicio_presentacion {
   margin: 7% 22%;
   display: flex;

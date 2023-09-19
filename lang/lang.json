@@ -30,7 +30,10 @@
       "menuexp": "Experiencia",
       "ptitulaciones": "En estos momentos estoy realizando cursos de manera autodidacta...",
       "exptittle": "Desarrollador Front-End como becario.",
-      "expp": "Tecnologies Industrials | 7 meses | HTML, SASS, PHP, MySQL"
+      "expp": "Tecnologies Industrials | 7 meses | HTML, SASS, PHP, MySQL",
+      "bigdata": "RELACIONADO CON BIG DATA",
+      "spark": "Computación en clúster",
+      "docker": "Contenedores de Software"
       
     },
     "en": {
@@ -64,7 +67,10 @@
       "menuexp": "Experience",
       "ptitulaciones": "At the moment, I engage in self-paced learning courses...",
       "exptittle": "Front-End Developer as an intern.",
-      "expp": "Tecnologies Industrials | 7 Months | HTML, SASS, PHP, MySQL"
+      "expp": "Tecnologies Industrials | 7 Months | HTML, SASS, PHP, MySQL",
+      "bigdata": "RELATED TO BIG DATA",
+      "spark": "Cluster Computing",
+      "docker": "Software Containers"
     
     }
   }
