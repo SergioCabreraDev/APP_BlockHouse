@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  background-color: #000;
   background-image: url("/fondo.jpg");
   margin: 0;
   margin-bottom: 200px;
