@@ -275,14 +275,8 @@ footer .contactos {
 }
 @media (max-width: 1024px) {
   .tituloinicial {
-    font-size: 11px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 50vh; /* Esto asegura que ocupe toda la altura de la pantalla */
-    margin: 0;
+    font-size: 15px;
+    margin: 10px;
   }
   .contenedor {
     color: white;
