@@ -21,7 +21,7 @@
       <nav class="nav">
           <ul class="ul">
               <li class="li"><a data-lang="" href="camarero.html" class="a">Camarero</a></li>
-              <li class="li"><a data-lang="" href="buffet.html" class="a">Buffet</a></li>
+              <li class="li"><a data-lang="" href="#" class="a">Buffet</a></li>
               <li class="li"><a data-lang="" href="lista.html" class="a">Numeros</a></li>
               <!-- <div class="idioma">
            
@@ -37,20 +37,30 @@
       </nav>
       
   </header>
+<div class="contenedor">
 
-<div class="tituloinicial">
-    <H1 class="">APRENDER NUMEROS BLOCK HOUSE</H1>
-    <h3 class="">Para Camareros, Buffets y Cocineros</h3>
+<div>
+  <center><h1 class="titulo">Práctica para Buffets</h1></center><br>
+ <center><p class="aviso">Las bebidas no se repiten hasta que acabes con todos <br> Apuntate en algun lado los numeros que no has adivinado</p></center>
 </div>
 
-
+     <div id="platoAleatorio">
+        <b><p id="nombrePlato"></p></b>
+        <p id="numeroPlato"></p>
+     </div>
+     <div id="mensajeFinal">¡Has completado todas las bebidas!<br>
+        <!-- Botón de Actualizar -->
+        <button class="boton" onclick="refreshPage()">¡Pulsa Aquí Para Seguir Practicando!</button>
+     </div>
+     <button class="boton" onclick="mostrarPlatoAleatorio()">Obtener Bebida Aleatoria</button>
+     <div id="listaCompleta"></div>
+</div>
    
 
   
 
   <footer>
     <div class="ubicacion">
-        <p>*Aun estoy desarrollando apartado de numeros*</p>
       <p class="marca">Desarrollado por Sergio Cabrera</p>
     </div>
 
@@ -63,6 +73,6 @@
   
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="app.js"></script>
+  <script src="app_buffet.js"></script>
 </body>
 </html>

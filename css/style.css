@@ -11,9 +11,11 @@ html {
 }
 
 body {
-  background-color: #111129;
+  background-color: rgb(255, 218, 150);
+  background-image: url("/fondo.jpg");
   margin: 0;
   margin-bottom: 200px;
+  font-family: "Outfit-Regular";
 }
 
 h2 {
@@ -36,18 +38,28 @@ li {
   list-style-type: none;
 }
 
+.tituloinicial {
+  font-size: 35px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Esto asegura que ocupe toda la altura de la pantalla */
+  margin: 0;
+}
+
 /* Código */
 .header {
   width: 100%;
   font-size: 17px;
-  background-color: #282828;
+  background-color: rgba(0, 0, 0, 0.767);
   padding: 1em;
   font-family: "Outfit-Regular";
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Ajusta los valores según tus preferencias */
   color: rgb(255, 255, 255);
   padding: 2% 20%;
@@ -130,7 +142,7 @@ svg {
   display: block;
   width: 0;
   height: 2px; /* Ancho y grosor de la línea */
-  background-color: #cc00ff;
+  background-color: rgb(255, 218, 150);
   bottom: -5px; /* Distancia desde la parte inferior del enlace */
   left: 0;
   transition: width 0.3s ease; /* Animación de la anchura */
@@ -145,273 +157,98 @@ svg {
   width: 27px;
 }
 
-#habilidades1 {
-  margin-bottom: 1.5%;
-  margin-top: 0%;
-  font-size: 25px;
+#mensajeFinal {
+  display: none;
+  font-weight: bold;
 }
 
-#inicio_presentacion {
-  margin: 7% 22%;
-  display: flex;
-  gap: 10%;
+@keyframes arcoiris {
+  0% {
+    color: #ff0000; /* Rojo */
+  }
+  16.67% {
+    color: #ff9900; /* Naranja */
+  }
+  33.33% {
+    color: #ff00ff; /* Amarillo */
+  }
+  50% {
+    color: #00ff00; /* Verde */
+  }
+  66.67% {
+    color: #0000ff; /* Azul */
+  }
+  83.33% {
+    color: #9900ff; /* Morado */
+  }
+  100% {
+    color: #ff0000; /* Regreso a Rojo para la transición continua */
+  }
 }
-#inicio_presentacion .fotoperfil {
-  width: 320px; /* Ajusta el ancho de la imagen según tus necesidades */
-  height: 320px; /* Ajusta la altura de la imagen según tus necesidades */
-  border-radius: 50%; /* Esto crea una máscara circular al establecer el radio de borde al 50% del ancho/altura */
-  overflow: hidden; /* Esto recorta cualquier parte de la imagen que se salga de la máscara circular */
-  border: 5px solid #cc00ff; /* Ajusta el ancho y el color del trazo según tus preferencias */
-}
-#inicio_presentacion .borde-decoration_about {
-  border-top: 2px solid #cc00ff;
-  width: 10rem;
-  right: 0;
-  margin-top: 1rem;
-}
-#inicio_presentacion .presentacion_titulo {
-  font-size: 23px;
-  font-family: "Outfit-Light";
-}
-#inicio_presentacion .presentacion_titulo p {
-  color: white;
-  margin-top: 2%;
-}
-#inicio_presentacion h1 {
-  font-family: "Outfit-Regular";
-  color: white;
-  font-size: 47px;
-}
-#inicio_presentacion strong {
-  color: #cc00ff;
-  font-size: 37px;
-}
-#inicio_presentacion .presentacion_botones {
-  display: flex;
-  gap: 24px;
-  margin-top: 20px;
-}
-#inicio_presentacion .presentacion_botones .boton-github,
-#inicio_presentacion .presentacion_botones .boton-linkedin {
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #cc00ff; /* Color de fondo de los botones */
-  border-radius: 50%; /* Hace que los botones sean circulares */
-  text-decoration: none;
-  color: #fff; /* Color del icono */
-  font-size: 20px; /* Tamaño del icono */
-  transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse sobre los botones */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Ajusta los valores según tus preferencias */
-  /* Estilos para el efecto de hover (pasa el mouse) */
-}
-#inicio_presentacion .presentacion_botones .boton-github:hover,
-#inicio_presentacion .presentacion_botones .boton-linkedin:hover {
-  background-color: #9e00c5; /* Cambia el color de fondo al pasar el mouse */
-}
-#inicio_presentacion .presentacion_botones .boton-descargar {
+h1 {
   font-family: "Outfit-Bold";
-  background-color: #cc00ff; /* Color de fondo del botón */
-  color: #fff; /* Color del texto */
-  padding: 10px 20px; /* Espaciado interno del botón */
-  border: none; /* Sin borde */
-  border-radius: 5px; /* Bordes ligeramente redondeados */
-  text-decoration: none;
-  font-size: 16px;
-  transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse sobre el botón */
-  /* Estilos para el efecto de hover (pasa el mouse) */
-}
-#inicio_presentacion .presentacion_botones .boton-descargar:hover {
-  background-color: #ffffff; /* Cambia el color de fondo al pasar el mouse */
-  color: #cc00ff;
 }
 
-#contenedor_proyectos {
-  margin: 1.5% 22%;
-  display: flex;
-  gap: 5%;
-  color: white;
-  font-family: "Outfit-Light";
-  justify-content: center;
-  align-items: center;
-}
-#contenedor_proyectos .proyecto {
-  border-radius: 1rem;
-  background-color: #1a1a41;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Ajusta los valores según tus preferencias */
-  width: 600px; /* Ancho fijo */
-  height: 520px; /* Alto fijo */
-}
-#contenedor_proyectos .tecnologias {
-  text-align: center;
-}
-#contenedor_proyectos .tecnologias img {
-  margin-bottom: 3%;
-  width: 30px;
-  height: 30px;
-}
-#contenedor_proyectos .letras {
-  margin: 0.5rem 3rem;
-}
-#contenedor_proyectos h3 {
-  text-align: center;
-  margin-bottom: 3%;
-  font-family: "Outfit-Regular";
-  font-size: 25px;
-}
-#contenedor_proyectos p {
-  margin-bottom: 1rem;
+.marca {
   font-size: 18px;
-}
-#contenedor_proyectos .imagen-proyecto {
-  max-width: 100%;
-  border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem;
-}
-#contenedor_proyectos .proyecto_botones {
-  display: flex;
-  gap: 5%;
-  align-items: center;
-  justify-content: center;
-}
-#contenedor_proyectos .boton-github,
-#contenedor_proyectos .boton-linkedin {
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #cc00ff; /* Color de fondo de los botones */
-  border-radius: 50%; /* Hace que los botones sean circulares */
-  text-decoration: none;
-  color: #fff; /* Color del icono */
-  font-size: 20px; /* Tamaño del icono */
-  transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse sobre los botones */
-  /* Estilos para el efecto de hover (pasa el mouse) */
-}
-#contenedor_proyectos .boton-github:hover,
-#contenedor_proyectos .boton-linkedin:hover {
-  background-color: #9e00c5; /* Cambia el color de fondo al pasar el mouse */
-}
-#contenedor_proyectos .boton-descargar {
   font-family: "Outfit-Bold";
-  background-color: #cc00ff; /* Color de fondo del botón */
-  color: #fff; /* Color del texto */
-  padding: 10px 20px; /* Espaciado interno del botón */
-  border: none; /* Sin borde */
-  border-radius: 5px; /* Bordes ligeramente redondeados */
-  text-decoration: none;
-  font-size: 16px;
-  transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse sobre el botón */
-  /* Estilos para el efecto de hover (pasa el mouse) */
-}
-#contenedor_proyectos .boton-descargar:hover {
-  background-color: #ffffff; /* Cambia el color de fondo al pasar el mouse */
-  color: #cc00ff;
+  display: inline-block;
+  animation: arcoiris 4s linear infinite; /* 6s para un ciclo completo, linear para una transición uniforme */
 }
 
-#contenedor_habilidades {
-  margin: 1.5% 22%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3%;
-  font-family: "Outfit-Light";
-  color: white;
-  justify-content: center;
-}
-#contenedor_habilidades .lenguaje {
-  background-color: #1a1a41;
-  display: flex;
-  width: 333px; /* Ancho fijo */
-  height: 70px; /* Alto fijo */
+.boton {
+  width: 20rem;
+  height: 3rem;
+  font-size: 15px;
+  margin-top: 2%;
   margin-bottom: 3%;
-  border-radius: 0.5rem;
-  transition: transform 0.3s ease; /* Agrega una transición para suavizar el efecto de zoom */
-  align-items: center;
-  overflow: hidden; /* Oculta cualquier contenido que se desborde al hacer zoom */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Ajusta los valores según tus preferencias */
-}
-#contenedor_habilidades .lenguaje:hover {
-  transform: scale(1.1); /* Aplica un efecto de zoom al pasar el mouse */
-}
-#contenedor_habilidades .lenguaje img {
-  height: 45px;
-  width: 45px;
-  margin-right: 10px;
-  padding-left: 3%;
-  transition: transform 0.3s ease; /* Agrega la misma transición a la imagen para suavizar el zoom */
-}
-#contenedor_habilidades .lenguaje:hover img {
-  transform: scale(1.2); /* Aplica un efecto de zoom a la imagen al pasar el mouse */
-}
-
-#contenedor_titulaciones {
-  margin: 1.5% 22%;
-  display: flex;
-  flex-direction: column;
-  color: white;
-  font-family: "Outfit-Light";
-}
-#contenedor_titulaciones .lenguaje {
-  background-color: #1a1a41;
-  display: flex;
-  width: 100%; /* Ancho fijo */
-  height: 70px; /* Alto fijo */
-  margin-bottom: 3%;
-  border-radius: 0.5rem;
-  align-items: center;
-  padding: 10px;
-  justify-content: space-between;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Ajusta los valores según tus preferencias */
-}
-#contenedor_titulaciones .boton-descargar {
   font-family: "Outfit-Bold";
-  background-color: #cc00ff; /* Color de fondo del botón */
-  color: #fff; /* Color del texto */
-  padding: 10px 20px; /* Espaciado interno del botón */
-  border: none; /* Sin borde */
-  border-radius: 5px; /* Bordes ligeramente redondeados */
-  text-decoration: none;
-  font-size: 14px;
-  transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse sobre el botón */
-  /* Estilos para el efecto de hover (pasa el mouse) */
-}
-#contenedor_titulaciones .boton-descargar:hover {
-  background-color: #ffffff; /* Cambia el color de fondo al pasar el mouse */
-  color: #cc00ff;
+  border: none;
+  padding: 14px 28px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: brown;
+  color: white;
 }
 
-#contenedor_experiencia {
-  margin: 1.5% 22%;
-  display: flex;
-  flex-direction: column;
+.contenedor {
   color: white;
-  font-family: "Outfit-Light";
-  margin-bottom: 20%;
-}
-#contenedor_experiencia .lenguaje {
-  background-color: #1a1a41;
   display: flex;
-  width: 100%; /* Ancho fijo */
-  height: 70px; /* Alto fijo */
-  margin-bottom: 3%;
-  border-radius: 0.5rem;
+  font-size: 17px;
+  gap: 50px;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 10px;
-  justify-content: space-between;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Ajusta los valores según tus preferencias */
+  border-radius: 1rem;
+  margin: 3% 30%; /* Asegúrate de que no haya margen que afecte a la centralización */
+  background-color: rgba(0, 0, 0, 0.411);
+}
+
+.titulo {
+  margin-top: 10%;
+}
+
+#nombrePlato {
+  font-family: "Outfit-Bold";
+}
+
+#platoAleatorio {
+  color: #000;
+  background-color: rgb(252, 215, 137);
+  border-radius: 0.5rem;
+  display: none;
+  box-shadow: 5px 5px 10px #888888;
+  padding: 30px;
 }
 
 footer {
   padding: 1.5% 22%;
   margin-top: 40%;
-  background-color: #1a1a41;
+  background-color: rgba(0, 0, 0, 0.8431372549);
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 260px;
+  height: 160px;
   color: white;
   font-family: "Outfit-Light";
 }
@@ -430,191 +267,44 @@ footer .contactos {
   text-align: center;
   justify-content: center;
 }
-footer .desarrollo {
-  margin-top: 4%;
-  align-items: center;
-  text-align: center;
-}
-footer .desarrollo .svg_desarrollo {
-  width: 40px;
-}
 
 @media screen and (min-width: 1024px) and (max-width: 1500px) {
   .header {
     padding: 2%;
   }
-  #inicio_presentacion {
-    margin: 7% 15%;
-    display: flex;
-    gap: 10%;
-  }
-  #inicio_presentacion .fotoperfil {
-    width: 240px; /* Ajusta el ancho de la imagen según tus necesidades */
-    height: 240px; /* Ajusta la altura de la imagen según tus necesidades */
-    border-radius: 50%; /* Esto crea una máscara circular al establecer el radio de borde al 50% del ancho/altura */
-    overflow: hidden; /* Esto recorta cualquier parte de la imagen que se salga de la máscara circular */
-    border: 5px solid #cc00ff; /* Ajusta el ancho y el color del trazo según tus preferencias */
-  }
-  #inicio_presentacion .borde-decoration_about {
-    border-top: 2px solid #cc00ff;
-    width: 10rem;
-    right: 0;
-    margin-top: 1rem;
-  }
-  #inicio_presentacion .presentacion_titulo {
-    font-size: 20px;
-    font-family: "Outfit-Light";
-  }
-  #inicio_presentacion .presentacion_titulo p {
-    color: white;
-    margin-top: 2%;
-  }
-  #inicio_presentacion h1 {
-    font-family: "Outfit-Regular";
-    color: white;
-    font-size: 37px;
-  }
-  #inicio_presentacion strong {
-    color: #cc00ff;
-    font-size: 27px;
-  }
-  #inicio_presentacion .presentacion_botones {
-    display: flex;
-    gap: 24px;
-    margin-top: 20px;
-  }
-  #inicio_presentacion .presentacion_botones .boton-github,
-  #inicio_presentacion .presentacion_botones .boton-linkedin {
-    width: 42px;
-    height: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #cc00ff; /* Color de fondo de los botones */
-    border-radius: 50%; /* Hace que los botones sean circulares */
-    text-decoration: none;
-    color: #fff; /* Color del icono */
-    font-size: 20px; /* Tamaño del icono */
-    transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse sobre los botones */
-    /* Estilos para el efecto de hover (pasa el mouse) */
-  }
-  #inicio_presentacion .presentacion_botones .boton-github:hover,
-  #inicio_presentacion .presentacion_botones .boton-linkedin:hover {
-    background-color: #9e00c5; /* Cambia el color de fondo al pasar el mouse */
-  }
-  #inicio_presentacion .presentacion_botones .boton-descargar {
-    font-family: "Outfit-Bold";
-    background-color: #cc00ff; /* Color de fondo del botón */
-    color: #fff; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes ligeramente redondeados */
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse sobre el botón */
-    /* Estilos para el efecto de hover (pasa el mouse) */
-  }
-  #inicio_presentacion .presentacion_botones .boton-descargar:hover {
-    background-color: #ffffff; /* Cambia el color de fondo al pasar el mouse */
-    color: #cc00ff;
-  }
-  #contenedor_proyectos {
-    margin: 1.5% 15%;
-    display: flex;
-    gap: 5%;
-    color: white;
-    font-family: "Outfit-Light";
-    justify-content: center;
-    align-items: center;
-  }
-  #contenedor_proyectos .proyecto {
-    border-radius: 1rem;
-    background-color: #1a1a41;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Ajusta los valores según tus preferencias */
-    width: 550px; /* Ancho fijo */
-    height: 520px; /* Alto fijo */
-  }
-  #contenedor_proyectos .tecnologias {
-    text-align: center;
-  }
-  #contenedor_proyectos .tecnologias img {
-    margin-bottom: 3%;
-    width: 30px;
-    height: 30px;
-  }
-  #contenedor_proyectos .letras {
-    margin: 0.5rem 3rem;
-  }
-  #contenedor_proyectos h3 {
-    text-align: center;
-    margin-bottom: 3%;
-    font-family: "Outfit-Regular";
-    font-size: 25px;
-  }
-  #contenedor_proyectos p {
-    margin-bottom: 1rem;
-    font-size: 18px;
-  }
-  #contenedor_proyectos .imagen-proyecto {
-    max-width: 100%;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-  }
-  #contenedor_proyectos .proyecto_botones {
-    display: flex;
-    gap: 5%;
-    align-items: center;
-    justify-content: center;
-  }
-  #contenedor_proyectos .boton-github,
-  #contenedor_proyectos .boton-linkedin {
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #cc00ff; /* Color de fondo de los botones */
-    border-radius: 50%; /* Hace que los botones sean circulares */
-    text-decoration: none;
-    color: #fff; /* Color del icono */
-    font-size: 20px; /* Tamaño del icono */
-    transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse sobre los botones */
-    /* Estilos para el efecto de hover (pasa el mouse) */
-  }
-  #contenedor_proyectos .boton-github:hover,
-  #contenedor_proyectos .boton-linkedin:hover {
-    background-color: #9e00c5; /* Cambia el color de fondo al pasar el mouse */
-  }
-  #contenedor_proyectos .boton-descargar {
-    font-family: "Outfit-Bold";
-    background-color: #cc00ff; /* Color de fondo del botón */
-    color: #fff; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes ligeramente redondeados */
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse sobre el botón */
-    /* Estilos para el efecto de hover (pasa el mouse) */
-  }
-  #contenedor_proyectos .boton-descargar:hover {
-    background-color: #ffffff; /* Cambia el color de fondo al pasar el mouse */
-    color: #cc00ff;
-  }
-  #contenedor_habilidades {
-    margin: 1.5% 15%;
-    font-size: 18px;
-  }
-  #contenedor_titulaciones {
-    margin: 1.5% 15%;
-    font-size: 18px;
-  }
-  #contenedor_experiencia {
-    margin: 1.5% 15%;
-    font-size: 18px;
-  }
 }
 @media (max-width: 1024px) {
+  .tituloinicial {
+    font-size: 11px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Esto asegura que ocupe toda la altura de la pantalla */
+    margin: 0;
+  }
+  .contenedor {
+    color: white;
+    display: flex;
+    font-size: 17px;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    margin: 3% 3%; /* Asegúrate de que no haya margen que afecte a la centralización */
+    background-color: rgba(0, 0, 0, 0.411);
+  }
+  #platoAleatorio {
+    color: #000;
+    background-color: rgb(252, 215, 137);
+    border-radius: 0.5rem;
+    display: none;
+    box-shadow: 5px 5px 10px #888888;
+    padding: 30px;
+    margin: 20px;
+  }
   .header .button {
     display: block;
     cursor: pointer;
@@ -633,7 +323,7 @@ footer .desarrollo .svg_desarrollo {
   }
   .header .nav.activo {
     /* display: block; */
-    height: 50vh;
+    height: 32vh;
     pointer-events: auto;
   }
   .header .ul {
@@ -647,382 +337,18 @@ footer .desarrollo .svg_desarrollo {
   .header {
     padding: 5%;
   }
-  #inicio_presentacion {
-    margin: 7% 5%;
-    display: flex;
-    gap: 10%;
-  }
-  #inicio_presentacion .fotoperfil {
-    width: 240px; /* Ajusta el ancho de la imagen según tus necesidades */
-    height: 240px; /* Ajusta la altura de la imagen según tus necesidades */
-    border-radius: 50%; /* Esto crea una máscara circular al establecer el radio de borde al 50% del ancho/altura */
-    overflow: hidden; /* Esto recorta cualquier parte de la imagen que se salga de la máscara circular */
-    border: 5px solid #cc00ff; /* Ajusta el ancho y el color del trazo según tus preferencias */
-  }
-  #inicio_presentacion .borde-decoration_about {
-    border-top: 2px solid #cc00ff;
-    width: 10rem;
-    right: 0;
-    margin-top: 1rem;
-  }
-  #inicio_presentacion .presentacion_titulo {
-    font-size: 20px;
-    font-family: "Outfit-Light";
-  }
-  #inicio_presentacion .presentacion_titulo p {
-    color: white;
-    margin-top: 2%;
-  }
-  #inicio_presentacion h1 {
-    font-family: "Outfit-Regular";
-    color: white;
-    font-size: 37px;
-  }
-  #inicio_presentacion strong {
-    color: #cc00ff;
-    font-size: 27px;
-  }
-  #inicio_presentacion .presentacion_botones {
-    display: flex;
-    gap: 24px;
-    margin-top: 20px;
-  }
-  #inicio_presentacion .presentacion_botones .boton-github,
-  #inicio_presentacion .presentacion_botones .boton-linkedin {
-    width: 42px;
-    height: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #cc00ff; /* Color de fondo de los botones */
-    border-radius: 50%; /* Hace que los botones sean circulares */
-    text-decoration: none;
-    color: #fff; /* Color del icono */
-    font-size: 20px; /* Tamaño del icono */
-    transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse sobre los botones */
-    /* Estilos para el efecto de hover (pasa el mouse) */
-  }
-  #inicio_presentacion .presentacion_botones .boton-github:hover,
-  #inicio_presentacion .presentacion_botones .boton-linkedin:hover {
-    background-color: #9e00c5; /* Cambia el color de fondo al pasar el mouse */
-  }
-  #inicio_presentacion .presentacion_botones .boton-descargar {
-    font-family: "Outfit-Bold";
-    background-color: #cc00ff; /* Color de fondo del botón */
-    color: #fff; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes ligeramente redondeados */
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse sobre el botón */
-    /* Estilos para el efecto de hover (pasa el mouse) */
-  }
-  #inicio_presentacion .presentacion_botones .boton-descargar:hover {
-    background-color: #ffffff; /* Cambia el color de fondo al pasar el mouse */
-    color: #cc00ff;
-  }
-  #contenedor_proyectos {
-    margin: 1.5% 5%;
-    display: flex;
-    gap: 5%;
-    color: white;
-    font-family: "Outfit-Light";
-    justify-content: center;
-    align-items: center;
-  }
-  #contenedor_proyectos .proyecto {
-    border-radius: 1rem;
-    background-color: #1a1a41;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Ajusta los valores según tus preferencias */
-    width: 580px; /* Ancho fijo */
-    height: 530px; /* Alto fijo */
-  }
-  #contenedor_proyectos .tecnologias {
-    text-align: center;
-  }
-  #contenedor_proyectos .tecnologias img {
-    margin-bottom: 3%;
-    width: 30px;
-    height: 30px;
-  }
-  #contenedor_proyectos .letras {
-    margin: 0.5rem 3rem;
-  }
-  #contenedor_proyectos h3 {
-    text-align: center;
-    margin-bottom: 3%;
-    font-family: "Outfit-Regular";
-    font-size: 25px;
-  }
-  #contenedor_proyectos p {
-    margin-bottom: 1rem;
-    font-size: 18px;
-  }
-  #contenedor_proyectos .imagen-proyecto {
-    max-width: 100%;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-  }
-  #contenedor_proyectos .proyecto_botones {
-    margin-top: 3%;
-    display: flex;
-    gap: 5%;
-    align-items: center;
-    justify-content: center;
-  }
-  #contenedor_proyectos .boton-github,
-  #contenedor_proyectos .boton-linkedin {
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #cc00ff; /* Color de fondo de los botones */
-    border-radius: 50%; /* Hace que los botones sean circulares */
-    text-decoration: none;
-    color: #fff; /* Color del icono */
-    font-size: 20px; /* Tamaño del icono */
-    transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse sobre los botones */
-    /* Estilos para el efecto de hover (pasa el mouse) */
-  }
-  #contenedor_proyectos .boton-github:hover,
-  #contenedor_proyectos .boton-linkedin:hover {
-    background-color: #9e00c5; /* Cambia el color de fondo al pasar el mouse */
-  }
-  #contenedor_proyectos .boton-descargar {
-    font-family: "Outfit-Bold";
-    background-color: #cc00ff; /* Color de fondo del botón */
-    color: #fff; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes ligeramente redondeados */
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse sobre el botón */
-    /* Estilos para el efecto de hover (pasa el mouse) */
-  }
-  #contenedor_proyectos .boton-descargar:hover {
-    background-color: #ffffff; /* Cambia el color de fondo al pasar el mouse */
-    color: #cc00ff;
-  }
-  h2 {
-    margin: 0% 0%;
-    margin-top: 5%;
-  }
-  #contenedor_habilidades {
-    margin: 1.5% 5%;
-    font-size: 18px;
-  }
-  #contenedor_titulaciones {
-    margin: 1.5% 5%;
-    font-size: 18px;
-  }
-  #contenedor_titulaciones .boton-descargar {
-    font-size: 13px;
-  }
-  #contenedor_experiencia {
-    margin: 1.5% 5%;
-    font-size: 18px;
-    margin-bottom: 40%;
-  }
 }
 @media (max-width: 767px) {
   .header {
     padding: 5%;
   }
-  #inicio_presentacion {
-    margin: 7% 4%;
-    display: block;
-    align-items: center;
-    text-align: center;
-    gap: 10%;
-  }
-  #inicio_presentacion .fotoperfil {
-    width: 220px; /* Ajusta el ancho de la imagen según tus necesidades */
-    height: 220px; /* Ajusta la altura de la imagen según tus necesidades */
-    border-radius: 50%; /* Esto crea una máscara circular al establecer el radio de borde al 50% del ancho/altura */
-    overflow: hidden; /* Esto recorta cualquier parte de la imagen que se salga de la máscara circular */
-    border: 5px solid #cc00ff; /* Ajusta el ancho y el color del trazo según tus preferencias */
-  }
-  #inicio_presentacion .borde-decoration_about {
-    margin: auto;
-    margin-top: 3%;
-  }
-  #inicio_presentacion .presentacion_titulo {
-    font-size: 20px;
-    font-family: "Outfit-Light";
-  }
-  #inicio_presentacion .presentacion_titulo p {
-    color: white;
-    margin-top: 2%;
-  }
-  #inicio_presentacion h1 {
-    font-family: "Outfit-Regular";
-    color: white;
-    font-size: 37px;
-  }
-  #inicio_presentacion strong {
-    color: #cc00ff;
-    font-size: 27px;
-  }
-  #inicio_presentacion .presentacion_botones {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    margin-top: 20px;
-  }
-  #inicio_presentacion .presentacion_botones .boton-github,
-  #inicio_presentacion .presentacion_botones .boton-linkedin {
-    width: 42px;
-    height: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #cc00ff; /* Color de fondo de los botones */
-    border-radius: 50%; /* Hace que los botones sean circulares */
-    text-decoration: none;
-    color: #fff; /* Color del icono */
-    font-size: 20px; /* Tamaño del icono */
-    transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse sobre los botones */
-    /* Estilos para el efecto de hover (pasa el mouse) */
-  }
-  #inicio_presentacion .presentacion_botones .boton-github:hover,
-  #inicio_presentacion .presentacion_botones .boton-linkedin:hover {
-    background-color: #9e00c5; /* Cambia el color de fondo al pasar el mouse */
-  }
-  #inicio_presentacion .presentacion_botones .boton-descargar {
-    font-family: "Outfit-Bold";
-    background-color: #cc00ff; /* Color de fondo del botón */
-    color: #fff; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes ligeramente redondeados */
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse sobre el botón */
-    /* Estilos para el efecto de hover (pasa el mouse) */
-  }
-  #inicio_presentacion .presentacion_botones .boton-descargar:hover {
-    background-color: #ffffff; /* Cambia el color de fondo al pasar el mouse */
-    color: #cc00ff;
-  }
-  #contenedor_proyectos {
-    margin: 1.5% 4%;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-family: "Outfit-Light";
-    justify-content: center;
-    align-items: center;
-  }
-  #contenedor_proyectos .proyecto {
-    margin-bottom: 8%;
-    border-radius: 1rem;
-    background-color: #1a1a41;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Ajusta los valores según tus preferencias */
-    width: 350px; /* Ancho fijo */
-    height: 550px; /* Alto fijo */
-  }
-  #contenedor_proyectos .tecnologias {
-    text-align: center;
-  }
-  #contenedor_proyectos .tecnologias img {
-    margin-bottom: 3%;
-    width: 30px;
-    height: 30px;
-  }
-  #contenedor_proyectos .letras {
-    margin: 0.5rem 3rem;
-  }
-  #contenedor_proyectos h3 {
-    text-align: center;
-    margin-bottom: 3%;
-    font-family: "Outfit-Regular";
-    font-size: 25px;
-  }
-  #contenedor_proyectos p {
-    margin-bottom: 1rem;
-    font-size: 18px;
-  }
-  #contenedor_proyectos .imagen-proyecto {
-    max-width: 100%;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-  }
-  #contenedor_proyectos .proyecto_botones {
-    margin-top: 3%;
-    display: flex;
-    gap: 5%;
-    align-items: center;
-    justify-content: center;
-  }
-  #contenedor_proyectos .boton-github,
-  #contenedor_proyectos .boton-linkedin {
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #cc00ff; /* Color de fondo de los botones */
-    border-radius: 50%; /* Hace que los botones sean circulares */
-    text-decoration: none;
-    color: #fff; /* Color del icono */
-    font-size: 20px; /* Tamaño del icono */
-    transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse sobre los botones */
-    /* Estilos para el efecto de hover (pasa el mouse) */
-  }
-  #contenedor_proyectos .boton-github:hover,
-  #contenedor_proyectos .boton-linkedin:hover {
-    background-color: #9e00c5; /* Cambia el color de fondo al pasar el mouse */
-  }
-  #contenedor_proyectos .boton-descargar {
-    font-family: "Outfit-Bold";
-    background-color: #cc00ff; /* Color de fondo del botón */
-    color: #fff; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes ligeramente redondeados */
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse sobre el botón */
-    /* Estilos para el efecto de hover (pasa el mouse) */
-  }
-  #contenedor_proyectos .boton-descargar:hover {
-    background-color: #ffffff; /* Cambia el color de fondo al pasar el mouse */
-    color: #cc00ff;
-  }
-  h2 {
-    margin: 0% 0%;
-    margin-top: 10%;
-  }
-  #contenedor_habilidades {
-    margin: 1.5% 4%;
-    font-size: 18px;
-  }
-  #contenedor_titulaciones {
-    margin: 1.5% 4%;
-    font-size: 16px;
-  }
-  #contenedor_titulaciones .lenguaje {
-    height: 110px;
-  }
-  #contenedor_titulaciones .boton-descargar {
-    font-size: 11px;
-  }
-  #contenedor_experiencia {
-    margin: 1.5% 4%;
-    font-size: 18px;
-    margin-bottom: 60%;
-  }
   footer {
     padding: 1.5% 22%;
-    background-color: #1a1a41;
+    background-color: rgba(0, 0, 0, 0.8901960784);
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 190px;
+    height: 140px;
     color: white;
     font-family: "Outfit-Light";
   }
@@ -1040,14 +366,6 @@ footer .desarrollo .svg_desarrollo {
     align-items: center;
     text-align: center;
     justify-content: center;
-  }
-  footer .desarrollo {
-    margin-top: 4%;
-    align-items: center;
-    text-align: center;
-  }
-  footer .desarrollo .svg_desarrollo {
-    width: 40px;
   }
 }
 /* Declara la fuente personalizada */
