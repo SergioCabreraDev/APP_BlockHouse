@@ -13,7 +13,7 @@ html {
   padding: 0;
 }
 body {
-  background-color: #8f8f8f;
+  background-color: #dfdfdf;
 
   margin: 0;
   margin-bottom: 200px;
@@ -26,7 +26,7 @@ h2 {
   font-family: "Outfit-Regular";
   margin: 0% 22%;
   margin-top: 5%;
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 a {
@@ -40,7 +40,7 @@ li {
 }
 .tituloinicial {
   font-size: 35px;
-  color: white;
+  color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -214,7 +214,7 @@ h1{
   cursor: pointer; 
   border-radius: 5px; 
   background-color: brown;
-  color: white;
+  color: rgb(255, 255, 255);
   
 }
 
@@ -398,9 +398,9 @@ footer {
   width: 150px;
   height: 60px;
   background-color: rgba(0, 0, 0, 0.233);
-  border: 2px solid white;
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 0.3rem;
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: "Outfit-Bold";
 
 }
