@@ -391,6 +391,36 @@ footer {
   }
 }
 
+.boton1 {
+  width: 150px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.233);
+  border: 2px solid white;
+  border-radius: 0.3rem;
+  color: white;
+  font-family: "Outfit-Bold";
+
+}
+.boton1:hover {
+  width: 150px;
+  height: 60px;
+  background-color: rgb(155, 0, 0);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 0.3rem;
+  color: white;
+  font-family: "Outfit-Bold";
+
+}
+.contentbotones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh; /* Esto asegura que ocupe toda la altura de la pantalla */
+  margin: 0;
+  gap: 7%;
+}
+
+
 /* Declara la fuente personalizada */
 @font-face {
   font-family: "Outfit-Bold";
