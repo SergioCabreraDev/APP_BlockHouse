@@ -26,6 +26,12 @@ h2 {
   text-align: center;
 }
 
+.explicaion {
+  text-align: center;
+  font-size: 20px;
+  margin: 0% 3%;
+}
+
 a {
   display: block;
   text-decoration: none;
@@ -281,6 +287,10 @@ footer .contactos {
     font-size: 15px;
     margin: 10px;
   }
+  .explicaion {
+    text-align: center;
+    font-size: 17px;
+  }
   .contenedor {
     color: white;
     display: flex;
@@ -339,6 +349,12 @@ footer .contactos {
   .header {
     padding: 5%;
   }
+  .contentbotones_camarero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+  }
   footer {
     padding: 1.5% 22%;
     background-color: rgba(0, 0, 0, 0.8784313725);
@@ -385,12 +401,30 @@ footer .contactos {
   font-family: "Outfit-Bold";
 }
 
+/* Reglas generales */
 .contentbotones {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 30vh;
+  gap: 7%;
+}
+
+/* Media query */
+@media (max-width: 767px) {
+  .contentbotones {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    margin-top: 7%;
+  }
+}
+.contentbotones_camarero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 30vh; /* Esto asegura que ocupe toda la altura de la pantalla */
-  margin: 0;
   gap: 7%;
 }
 

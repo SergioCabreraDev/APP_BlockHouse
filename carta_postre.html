@@ -20,7 +20,7 @@
 
       <nav class="nav">
           <ul class="ul">
-              <li class="li"><a data-lang="" href="#" class="a">Camarero</a></li>
+              <li class="li"><a data-lang="" href="camarero.html" class="a">Camarero</a></li>
               <li class="li"><a data-lang="" href="buffet.html" class="a">Buffet</a></li>
               <li class="li"><a data-lang="" href="lista.html" class="a">Numeros</a></li>
               <!-- <div class="idioma">
@@ -37,18 +37,29 @@
       </nav>
       
   </header>
-  
 
-<h2>PRACTICA PARA CAMAREROS</h2>
-<P class="explicaion">Elige que tipo de practica quieres hacer.
-La opción todo incluido incluye el contenido de las tres opciones restantes.</P>
-<div class="contentbotones_camarero">
-  <a href="carta_adulto.html"><button class="boton1">CARTA ADULTO</button></a>
-  <a href="carta_postre.html"><button class="boton1">POSTRES</button></a>
-  <a href="carta_menuniño.html"><button class="boton1">MENU DE NIÑO</button></a>
-  <a href="carta_todoincluido.html"><button class="boton1">TODO INCLUIDO</button></a>
 
+<div class="contenedor">
+
+  <div class="explicacion">
+    <center><h1 class="titulo">Carta Postre</h1></center><br>
+   <center><p class="aviso">Los platos no se repiten hasta que acabes con todos <br> Apuntate en algun lado los numeros que no has adivinado</p></center>
+  </div>
+
+     <div id="platoAleatorio">
+        <b><p id="nombrePlato"></p></b>
+        <p id="numeroPlato"></p>
+     </div>
+     <div id="mensajeFinal">¡Has completado todos los platos!<br>
+       
+        <button class="boton" onclick="refreshPage()">¡Pulsa Aquí Para Seguir Practicando!</button>
+     </div>
+     <button class="boton" onclick="mostrarPlatoAleatorio()">Obtener Plato Aleatorio</button>
+     <div id="listaCompleta"></div>
 </div>
+   
+
+
   
 
   <footer>
@@ -65,6 +76,6 @@ La opción todo incluido incluye el contenido de las tres opciones restantes.</P
   
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/app_carta_adulto.js"></script>
+  <script src="js/app_postres.js"></script>
 </body>
 </html>
