@@ -344,6 +344,9 @@ footer .contactos {
   .header {
     padding: 5%;
   }
+  .contentbotones_camarero {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 767px) {
   .header {
@@ -351,9 +354,10 @@ footer .contactos {
   }
   .contentbotones_camarero {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 23%;
   }
   footer {
     padding: 1.5% 22%;
@@ -404,6 +408,7 @@ footer .contactos {
 /* Reglas generales */
 .contentbotones {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   height: 30vh;
