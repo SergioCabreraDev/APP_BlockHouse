@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/bh-favicon.ico" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
     <title>Sergio Cabrera</title>
   </head>
   <body>
   <header class="header">
 
-          <a href="index.html" class="a"><img src="/assets/img/vaca blanca.png" height="50px"  alt=""></a>
+          <a href="../index.html" class="a"><img src="/assets/img/vaca blanca.png" height="50px"  alt=""></a>
       
 
       <button class="button">
@@ -20,9 +20,9 @@
 
       <nav class="nav">
           <ul class="ul">
-              <li class="li"><a data-lang="" href="camarero.html" class="a">Camarero</a></li>
-              <li class="li"><a data-lang="" href="buffet.html" class="a">Buffet</a></li>
-              <li class="li"><a data-lang="" href="lista.html" class="a">Numeros</a></li>
+              <li class="li"><a data-lang="" href="../camarero.html" class="a">Camarero</a></li>
+              <li class="li"><a data-lang="" href="../buffet.html" class="a">Buffet</a></li>
+              <li class="li"><a data-lang="" href="../numeros.html" class="a">Numeros</a></li>
               <!-- <div class="idioma">
            
                 <a class="translate" id="en"><img class="banderas" src="/assets/svg/Flag_of_the_United_States.svg" ></a>
@@ -38,24 +38,32 @@
       
   </header>
 
-<h2>Selecciona la lista de numeros</h2>
-<P class="explicaion">Selecciona la lista de números que quieres ver.</P>
-<div class="contentbotones">
-  <a href="listacomida.html"><button class="boton1">CARTA ADULTO</button></a>
-  <a href="listamenuniño.html"><button class="boton1">MENU NIÑO</button></a>
-  <a href="listapostre.html"><button class="boton1">POSTRES</button></a>
-  <a href="listabebida.html"><button class="boton1">BEBIDAS</button></a>
-  <a href="listamodificadores.html"><button class="boton1">MODIFICADORES</button></a>
+
+<div class="contenedor">
+
+  <div class="explicacion">
+    <center><h1 class="titulo">Carta Menu Niño</h1></center><br>
+   <center><p class="aviso">Los platos no se repiten hasta que acabes con todos <br> Apuntate en algun lado los numeros que no has adivinado</p></center>
+  </div>
+
+     <div id="platoAleatorio">
+        <b><p id="nombrePlato"></p></b>
+        <p id="numeroPlato"></p>
+     </div>
+     <div id="mensajeFinal">¡Has completado todos los platos!<br>
+       
+        <button class="boton" onclick="refreshPage()">¡Pulsa Aquí Para Seguir Practicando!</button>
+     </div>
+     <button class="boton" onclick="mostrarPlatoAleatorio()">Obtener Plato Aleatorio</button>
+     <div id="listaCompleta"></div>
 </div>
-
-
    
+
 
   
 
   <footer>
     <div class="ubicacion">
-       
       <p class="marca">Desarrollado por Sergio Cabrera</p>
     </div>
 
@@ -68,6 +76,6 @@
   
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/app_carta_adulto.js"></script>
+  <script src="js/app_menuniño.js"></script>
 </body>
 </html>
